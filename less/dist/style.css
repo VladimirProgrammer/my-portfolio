@@ -136,6 +136,10 @@ h1 {
 .aboutme h1 {
   margin-left: 20px;
 }
+.aboutme p {
+  text-indent: 1.5em;
+  text-align: justify;
+}
 .intro__sect h1,
 .aboutme h1,
 .myskills h1,
@@ -282,6 +286,9 @@ h1 {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+}
+.myskills__content_block {
+  margin: 20px;
 }
 .portfolio,
 .portfolio h1,
