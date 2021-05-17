@@ -3,10 +3,25 @@
 @color3: rgb(26, 188, 156);
 @color4: #77f7dd;
 */
+/*
 @color1: rgb(133, 115, 173);
 @color2: rgba(133, 115, 173, 0.6);
 @color3: #887aa8;
-@color4: #e3dcf599;
+@color4: #e3dcf599;*/
+/*
+@color4: rgb(208, 170, 91);
+@color4: rgba(208, 170, 91, 0.6);
+@color4: rgba(208, 170, 91, 0.6);
+@color4: rgba(208, 170, 91, 0.6);
+*/
+
+
+@color1: rgba(3, 32, 37, 0.178);
+@color2: rgba(31, 161, 184, 0.6);
+@color3: rgb(31, 161, 173);
+@color4: rgb(2, 31, 36);
+@color5: rgb(188, 237, 241);
+@color11: rgb(8, 138, 161);
 
 *{
     margin: 0;
@@ -14,14 +29,14 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
+.intro__sect,
 .aboutme,
 .myskills,
 .myskillsoft,
 .portfolio,
 .certificates{
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
 
 .footer{
@@ -33,7 +48,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 28px;
+    margin-bottom: 40px;
 }
 
 .line{
@@ -99,7 +114,6 @@ input#exampleFormControlInput1 {
 .intro__sect{
     background-color: @color3;
     background-size: cover;
-    height: 780px;
     z-index: 0;
     color: white;
 }
@@ -174,7 +188,7 @@ h1{
 }
 
 .intro__sect h1{
-    margin-top: 100px;
+    margin-top: 70px;
     color: white;
 }
 
@@ -344,7 +358,7 @@ h1{
 }
 .portfolio__content_block{
     margin: 10px;
-    border: 1px solid @color4;
+    border: 1px solid @color5;
     position: relative;
     border-radius: 20px;
 }
@@ -366,6 +380,7 @@ h1{
     filter: brightness(50%);
 }
 .readmore {
+    text-align: center;
     color: white;
     font-size: 13px;
     font-weight: 700;
@@ -408,15 +423,35 @@ h1{
     margin-top: 70px;
     text-align: end;
 }
-
+@media (max-width: 1024px){
+    .navbar_scrolled{
+        display: none;
+    }
+    .aboutme .col-md-4{
+        text-align: center;
+    }
+}
 
 
 @media (max-width: 992px) {
+    .intro__sect,
+    .aboutme,
+    .myskills,
+    .myskillsoft,
+    .portfolio,
+    .certificates{
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .intro__sect h1{
+        margin-top: 30px;
+    }
     
     .navbar{
         position: static;
         text-align: center;
         font-size: 24px;
+        background-color: @color11;
     }
     .footer{
         text-align: center; 
@@ -425,11 +460,7 @@ h1{
         margin: 15px;
     }
 }
-@media (max-width: 768px){
-    .intro__sect{
-        height: 900px;
-    } 
-}
+
 
 @media (min-width: 768px){
 
@@ -445,13 +476,13 @@ h1{
     max-width: 75%;
 }
 }
-.show{
-    background-color: @color1;
-}
+
 .navbar_scrolled{
     position: fixed;
     top: 0;
     background-color: @color2;
     z-index: 99;
 }
-
+.russian { display: block; }
+.spanish { display: none; }
+.english { display: none; }

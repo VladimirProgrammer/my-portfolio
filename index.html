@@ -13,29 +13,43 @@
     <link rel="stylesheet" href="./less/dist/style.css">
     <title>Vladimir Tiunov</title>
 </head>
-<body>
+<body class="language">
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
-      <h4>Владимир Тиунов</h4>
+      <select id="select">
+        <option id="russian" value="russian">RU</option>
+        <option id="english" value="english">EN</option>
+        <option id="spanish" value="spanish">ESP</option>
+      </select>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="#main">Главная</a>
+            <a class="nav-link russian" href="#main">Главная</a>
+            <a class="nav-link english" href="#main">Main</a>
+            <a class="nav-link spanish" href="#main">Principal</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#mine">Обо мне</a>
+            <a class="nav-link russian" href="#mine">Обо мне</a>
+            <a class="nav-link english" href="#mine">About me</a>
+            <a class="nav-link spanish" href="#mine">Sobre me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#coolprojects">Портфолио</a>
+            <a class="nav-link russian" href="#coolprojects">Портфолио</a>
+            <a class="nav-link english" href="#coolprojects">Portfolio</a>
+            <a class="nav-link spanish" href="#coolprojects">Portafolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#diplomas">Сертификаты</a>
+            <a class="nav-link russian" href="#diplomas">Сертификаты</a>
+            <a class="nav-link english" href="#diplomas">Certificates</a>
+            <a class="nav-link spanish" href="#diplomas">Diplomas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contactos">Контакты</a>
+            <a class="nav-link russian" href="#contactos">Контакты</a>
+            <a class="nav-link english" href="#contactos">Contacts</a>
+            <a class="nav-link spanish" href="#contactos">Contactos</a>
           </li>
         </ul>
       </div>
@@ -46,11 +60,13 @@
   <div class="container">
       <div class="row">
           <div class="col-12">
-            <h1>НЕДАВНЯЯ РАБОТА</h1>
+            <h1 class="russian">НЕДАВНЯЯ РАБОТА</h1>
+            <h1 class="english">RECENT WORK</h1>
+            <h1 class="spanish">TRABAJO RECIENTE</h1>
             <div class="image">
-              <img class="line" src="./img/Line 5.svg" alt="">
+              <img class="line" src="./img/linewhite.svg" alt="">
               <i class="fas fa-circle fa-2x skill"></i>
-              <img class="line" src="./img/Line 5.svg" alt="">
+              <img class="line" src="./img/linewhite.svg" alt="">
             </div>
 
 
@@ -90,12 +106,13 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h1>ОБО МНЕ</h1>
-
+        <h1 class="russian">ОБО МНЕ</h1>
+        <h1 class="english">ABOUT ME</h1>
+        <h1 class="spanish">SOBRE MI</h1>
         <div class="image">
-          <img class="line" src="./img/Line 6.svg" alt="">
+          <img class="line" src="./img/lineblack.svg" alt="">
           <i class="far fa-address-card fa-2x"></i>
-          <img class="line" src="./img/Line 6.svg" alt="">
+          <img class="line" src="./img/lineblack.svg" alt="">
         </div>
 
         <div class="row">
@@ -121,11 +138,13 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1>HARD SKILLS</h1>
+          <h1 class="russian">НАВЫКИ</h1>
+          <h1 class="english">HARD SKILLS</h1>
+          <h1 class="spanish">HABILIDADES</h1>
           <div class="image">
-            <img class="line" src="./img/Line 5.svg" alt="">
+            <img class="line" src="./img/linewhite.svg" alt="">
             <i class="fas fa-code fa-2x skill"></i>
-            <img class="line" src="./img/Line 5.svg" alt="">
+            <img class="line" src="./img/linewhite.svg" alt="">
           </div>
         
           <div class="myskills__content">
@@ -167,27 +186,27 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1>SOFT SKILLS</h1>
+          <h1 class="russian">КОМПЕТЕНЦИИ</h1>
+          <h1 class="english">SOFT SKILLS</h1>
+          <h1 class="spanish">COMPETENCIAS</h1>
           <div class="image">
-            <img class="line" src="./img/Line 6.svg" alt="">
+            <img class="line" src="./img/lineblack.svg" alt="">
             <i class="fas fa-american-sign-language-interpreting fa-2x"></i>
-            <img class="line" src="./img/Line 6.svg" alt="">
+            <img class="line" src="./img/lineblack.svg" alt="">
           </div>
           <div class="myskillsoft__content">
             <div class="myskillsoft__content_block">
               <div class="progress-circle"><h2>С1</h2></div>
-              <p>Английский язык</p>
+              <p class="russian">АНГЛИЙСКИЙ ЯЗЫК</p>
+              <p class="english">ENGLISH</p>
+              <p class="spanish">INGLÉS</p>
             </div>
-          
-
             <div class="myskillsoft__content_block">
               <div class="progress-circle"><h2>B2</h2></div>
-              <p>Испанский язык</p>
+              <p class="russian">ИСПАНСКИЙ ЯЗЫК</p>
+              <p class="english">SPANISH</p>
+              <p class="spanish">ESPAÑOL</p>
             </div>
-            
-
-
-
           </div>
           
       
@@ -196,21 +215,82 @@
     </div>
   </section>
 
+  
+
+
   <section class="portfolio" id="coolprojects">
     <div class="container">
         <div class="row">
             <div class="col-12">
-              <h1>ПОРТФОЛИО</h1>
+              <h1 class="russian">ПОРТФОЛИО</h1>
+              <h1 class="english">PORTFOLIO</h1>
+              <h1 class="spanish">PORTAFOLIO</h1>
               <div class="image">
-                <img class="line" src="./img/Line 5.svg" alt="">
+                <img class="line" src="./img/linewhite.svg" alt="">
                 <i class="far fa-file fa-2x"></i>
-                <img class="line" src="./img/Line 5.svg" alt="">
+                <img class="line" src="./img/linewhite.svg" alt="">
               </div>
               <div class="portfolio__content">
                 <div class="portfolio__content_block">
                   <div class="projectphoto">
-                    <img class="portfolio__content_img" src="./img/joanna-kosinska-1_CMoFsPfso-unsplash (1) (1).jpg" alt="">
-                    <div class="readmore">Ссылка на проект</div>
+                    <img class="portfolio__content_img" src="./img/colorproject.jpg" alt="">
+                    <a href="https://vladimirprogrammer.github.io/Color-project/" target="_blank">
+                      
+                      <div class="readmore"><span class="russian">Ссылка на проект</span></div>
+                      <div class="readmore"><span class="english">Link</span></div>
+                      <div class="readmore"><span class="spanish">Enlace</span></div>
+                    
+                    </a>
+                    
+                  </div>
+                  <div class="projectdata">
+                    <p>FRONT-END разработка 2021</p>
+                    
+                    <h5>Основные технологиии:</h5>
+                    <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>Bootstrap 5</li>
+                      <li>jQuery</li>
+                    </ul>
+                    
+                  </div>
+                </div>
+
+                <div class="portfolio__content_block">
+                  <div class="projectphoto">
+                    <img class="portfolio__content_img" src="./img/Theater.jpg" alt="">
+                    <a href="https://vladimirprogrammer.github.io/The-theater-Bolshoy-theater-./" target="_blank">
+                      <div class="readmore"><span class="russian">Ссылка на проект</span></div>
+                      <div class="readmore"><span class="english">Link</span></div>
+                      <div class="readmore"><span class="spanish">Enlace</span></div>
+                    
+                    </a>
+                    
+                  </div>
+                  <div class="projectdata">
+                    <p>FRONT-END разработка 2021</p>
+                    
+                    <h5>Основные технологиии:</h5>
+                    <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>Bootstrap 5</li>
+                      <li>jQuery</li>
+                    </ul>
+                    
+                  </div>
+                </div>
+
+                <div class="portfolio__content_block">
+                  <div class="projectphoto">
+                    <img class="portfolio__content_img" src="./img/resumereview.jpg" alt="">
+                    <a href="https://vladimirprogrammer.github.io/Resume-Review/" target="_blank">
+                      <div class="readmore"><span class="russian">Ссылка на проект</span></div>
+                      <div class="readmore"><span class="english">Link</span></div>
+                      <div class="readmore"><span class="spanish">Enlace</span></div>
+                    </a>
+                    
                   </div>
                   <div class="projectdata">
                     <p>FRONT-END разработка 2021</p>
@@ -227,8 +307,14 @@
                 </div>
                 <div class="portfolio__content_block">
                   <div class="projectphoto">
-                    <img class="portfolio__content_img" src="./img/joanna-kosinska-1_CMoFsPfso-unsplash (1) (1).jpg" alt="">
-                    <div class="readmore">Ссылка на проект</div>
+                    <img class="portfolio__content_img" src="./img/teacosy.jpg" alt="">
+                    <a href="https://vladimirprogrammer.github.io/Tea-Cozy/" target="_blank">
+                      
+                      <div class="readmore"><span class="russian">Ссылка на проект</span></div>
+                      <div class="readmore"><span class="english">Link</span></div>
+                      <div class="readmore"><span class="spanish">Enlace</span></div>
+                    
+                    </a>
                   </div>
                   <div class="projectdata">
                     <p>FRONT-END разработка 2021</p>
@@ -245,8 +331,14 @@
                 </div>
                 <div class="portfolio__content_block">
                   <div class="projectphoto">
-                    <img class="portfolio__content_img" src="./img/joanna-kosinska-1_CMoFsPfso-unsplash (1) (1).jpg" alt="">
-                    <div class="readmore">Ссылка на проект</div>
+                    <img class="portfolio__content_img" src="./img/checkerboard.jpg" alt="">
+                    <a href="https://vladimirprogrammer.github.io/Bootstrap-Checkerboard/" target="_blank">
+                      
+                      <div class="readmore"><span class="russian">Ссылка на проект</span></div>
+                      <div class="readmore"><span class="english">Link</span></div>
+                      <div class="readmore"><span class="spanish">Enlace</span></div>
+                    
+                    </a>
                   </div>
                   <div class="projectdata">
                     <p>FRONT-END разработка 2021</p>
@@ -263,8 +355,14 @@
                 </div>
                 <div class="portfolio__content_block">
                   <div class="projectphoto">
-                    <img class="portfolio__content_img" src="./img/joanna-kosinska-1_CMoFsPfso-unsplash (1) (1).jpg" alt="">
-                    <div class="readmore">Ссылка на проект</div>
+                    <img class="portfolio__content_img" src="./img/colmarcademy.jpg" alt="">
+                    <a href="https://vladimirprogrammer.github.io/COLMAR-ACADEMY/" target="_blank">
+                      
+                      <div class="readmore"><span class="russian">Ссылка на проект</span></div>
+                      <div class="readmore"><span class="english">Link</span></div>
+                      <div class="readmore"><span class="spanish">Enlace</span></div>
+                    
+                    </a>
                   </div>
                   <div class="projectdata">
                     <p>FRONT-END разработка 2021</p>
@@ -281,8 +379,14 @@
                 </div>
                 <div class="portfolio__content_block">
                   <div class="projectphoto">
-                    <img class="portfolio__content_img" src="./img/joanna-kosinska-1_CMoFsPfso-unsplash (1) (1).jpg" alt="">
-                    <div class="readmore">Ссылка на проект</div>
+                    <img class="portfolio__content_img" src="./img/fotomatic.jpg" alt="">
+                    <a href="https://vladimirprogrammer.github.io/FotomaticProject/" target="_blank">
+                      
+                      <div class="readmore"><span class="russian">Ссылка на проект</span></div>
+                      <div class="readmore"><span class="english">Link</span></div>
+                      <div class="readmore"><span class="spanish">Enlace</span></div>
+                    
+                    </a>
                   </div>
                   <div class="projectdata">
                     <p>FRONT-END разработка 2021</p>
@@ -297,6 +401,31 @@
                     
                   </div>
                 </div>
+                <div class="portfolio__content_block">
+                  <div class="projectphoto">
+                    <img class="portfolio__content_img" src="./img/excursion.jpg" alt="">
+                    <a href="https://vladimirprogrammer.github.io/excursion/" target="_blank">
+                      
+                      <div class="readmore"><span class="russian">Ссылка на проект</span></div>
+                      <div class="readmore"><span class="english">Link</span></div>
+                      <div class="readmore"><span class="spanish">Enlace</span></div>
+                    
+                    </a>
+                  </div>
+                  <div class="projectdata">
+                    <p>FRONT-END разработка 2021</p>
+                    
+                    <h5>Основные технологиии:</h5>
+                    <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>Bootstrap 5</li>
+                      <li>jQuery</li>
+                    </ul>
+                    
+                  </div>
+                </div>
+                
               </div>  
             </div>
         </div>
@@ -307,11 +436,11 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-              <h1>ДИПЛОМЫ</h1>
+              <h1>СЕРТИФИКАТЫ</h1>
               <div class="image">
-                <img class="line" src="./img/Line 6.svg" alt="">
+                <img class="line" src="./img/lineblack.svg" alt="">
                 <i class="fas fa-certificate fa-2x"></i>
-                <img class="line" src="./img/Line 6.svg" alt="">
+                <img class="line" src="./img/lineblack.svg" alt="">
               </div>
               <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">

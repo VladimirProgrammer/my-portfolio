@@ -3,19 +3,31 @@
 @color3: rgb(26, 188, 156);
 @color4: #77f7dd;
 */
+/*
+@color1: rgb(133, 115, 173);
+@color2: rgba(133, 115, 173, 0.6);
+@color3: #887aa8;
+@color4: #e3dcf599;*/
+/*
+@color4: rgb(208, 170, 91);
+@color4: rgba(208, 170, 91, 0.6);
+@color4: rgba(208, 170, 91, 0.6);
+@color4: rgba(208, 170, 91, 0.6);
+*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+.intro__sect,
 .aboutme,
 .myskills,
 .myskillsoft,
 .portfolio,
 .certificates {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 .footer {
   padding-top: 70px;
@@ -25,13 +37,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 28px;
+  margin-bottom: 40px;
 }
 .line {
   width: 60px;
   margin-left: 20px;
   margin-right: 20px;
-  color: #887aa8;
+  color: #1fa1ad;
 }
 /*bootstrap 5*/
 .navbar {
@@ -46,7 +58,7 @@
   color: white;
 }
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #e3dcf599;
+  color: #021f24;
 }
 .navbar-light .navbar-nav .nav-link {
   color: white;
@@ -71,14 +83,13 @@ input#exampleFormControlInput1 {
 }
 /*bootstrap 5 finish*/
 .navbar {
-  background-color: #8573ad;
+  background-color: rgba(3, 32, 37, 0.178);
   color: white;
   z-index: 1;
 }
 .intro__sect {
-  background-color: #887aa8;
+  background-color: #1fa1ad;
   background-size: cover;
-  height: 780px;
   z-index: 0;
   color: white;
 }
@@ -141,7 +152,7 @@ h1 {
   margin-bottom: 10px;
 }
 .intro__sect h1 {
-  margin-top: 100px;
+  margin-top: 70px;
   color: white;
 }
 .myskills p,
@@ -161,7 +172,7 @@ h1 {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: rgba(133, 115, 173, 0.6);
+  background-color: rgba(31, 161, 184, 0.6);
 }
 .progress-circle h2 {
   padding-top: 30px;
@@ -212,7 +223,7 @@ h1 {
   color: #fff;
   text-align: center;
   white-space: nowrap;
-  background-color: #887aa8;
+  background-color: #1fa1ad;
   transition: width 0.6s ease;
 }
 .progress-bar div span {
@@ -226,19 +237,19 @@ h1 {
   top: 10px;
   text-align: center;
   border-radius: 50%;
-  background-color: #887aa8;
+  background-color: #1fa1ad;
 }
 .progress-bar .background {
-  background-color: #887aa8;
+  background-color: #1fa1ad;
 }
 .progress-bar .rotate {
   clip: rect(0 80px 160px 0);
-  background-color: #887aa8;
+  background-color: #1fa1ad;
 }
 .progress-bar .left {
   clip: rect(0 80px 160px 0);
   opacity: 1;
-  background-color: #887aa8;
+  background-color: #1fa1ad;
 }
 .progress-bar .right {
   clip: rect(0 80px 160px 0);
@@ -252,7 +263,7 @@ h1 {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   width: 20px;
-  background-color: #887aa8;
+  background-color: #1fa1ad;
 }
 @keyframes toggle {
   0% {
@@ -264,7 +275,7 @@ h1 {
 }
 /*end*/
 .myskills {
-  background-color: #887aa8;
+  background-color: #1fa1ad;
 }
 .myskills__content {
   display: flex;
@@ -284,12 +295,12 @@ h1 {
 }
 .portfolio__content_block {
   margin: 10px;
-  border: 1px solid #e3dcf599;
+  border: 1px solid #bcedf1;
   position: relative;
   border-radius: 20px;
 }
 .portfolio {
-  background-color: #887aa8;
+  background-color: #1fa1ad;
 }
 .projectdata {
   padding-left: 10px;
@@ -304,6 +315,7 @@ h1 {
   filter: brightness(50%);
 }
 .readmore {
+  text-align: center;
   color: white;
   font-size: 13px;
   font-weight: 700;
@@ -324,14 +336,14 @@ h1 {
   display: block;
 }
 .footer {
-  background-color: #887aa8;
+  background-color: #1fa1ad;
 }
 .footer .fab,
 .footer .mail {
   color: white;
 }
 .footer .fab:hover {
-  color: #e3dcf599;
+  color: #021f24;
 }
 .copyright h4 {
   font-size: 14px;
@@ -339,22 +351,38 @@ h1 {
   margin-top: 70px;
   text-align: end;
 }
+@media (max-width: 1024px) {
+  .navbar_scrolled {
+    display: none;
+  }
+  .aboutme .col-md-4 {
+    text-align: center;
+  }
+}
 @media (max-width: 992px) {
+  .intro__sect,
+  .aboutme,
+  .myskills,
+  .myskillsoft,
+  .portfolio,
+  .certificates {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .intro__sect h1 {
+    margin-top: 30px;
+  }
   .navbar {
     position: static;
     text-align: center;
     font-size: 24px;
+    background-color: #088aa1;
   }
   .footer {
     text-align: center;
   }
   .footer .fab {
     margin: 15px;
-  }
-}
-@media (max-width: 768px) {
-  .intro__sect {
-    height: 900px;
   }
 }
 @media (min-width: 768px) {
@@ -369,12 +397,18 @@ h1 {
     max-width: 75%;
   }
 }
-.show {
-  background-color: #8573ad;
-}
 .navbar_scrolled {
   position: fixed;
   top: 0;
-  background-color: rgba(133, 115, 173, 0.6);
+  background-color: rgba(31, 161, 184, 0.6);
   z-index: 99;
+}
+.russian {
+  display: block;
+}
+.spanish {
+  display: none;
+}
+.english {
+  display: none;
 }
