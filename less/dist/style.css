@@ -102,6 +102,13 @@ input#exampleFormControlInput1 {
 .reference p {
   margin-right: 5px;
 }
+.reference a {
+  color: white;
+  text-decoration: none;
+}
+.reference i {
+  margin-left: 5px;
+}
 .reference .fas {
   font-size: 200;
   color: white;
@@ -292,7 +299,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
+  align-items: top !important;
 }
 .myskills__content {
   margin-bottom: 20px;
@@ -328,6 +335,9 @@ h1 {
 .projectdata p {
   margin-bottom: 5px;
 }
+.portfolio__content_block:hover .intro__content_img {
+  filter: brightness(50%);
+}
 .portfolio__content_block:hover .portfolio__content_img {
   filter: brightness(50%);
 }
@@ -347,6 +357,9 @@ h1 {
   transform: translateX(-50%);
   text-decoration: none;
   display: none;
+}
+.intro__sect .readmore {
+  top: 40%;
 }
 .portfolio__content_block:hover .readmore {
   box-shadow: 0 0 10px white;
@@ -412,6 +425,16 @@ h1 {
   .col-md-9 {
     flex: 0 0 75%;
     max-width: 75%;
+  }
+}
+@media (max-width: 320px) {
+  .intro__sect h1,
+  .aboutme h1,
+  .myskills h1,
+  .myskillsoft h1,
+  .portfolio h1,
+  .certificates h1 {
+    letter-spacing: 0;
   }
 }
 .navbar_scrolled {
