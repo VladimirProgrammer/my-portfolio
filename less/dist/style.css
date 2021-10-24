@@ -452,3 +452,8 @@ h1 {
 .english {
   display: none;
 }
+@media print {
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+  }
+}
